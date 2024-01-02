@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carreras de Montaña</title>
-    <link rel="stylesheet" href="css/landing_page.css">
+    <link rel="stylesheet" href="css/landing_page.css" type="text/css">
 
      <!-- Google fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,24 +13,24 @@
 </head>
 <body>
     <header>
-        <div id="logo">
+        <a id="logo" href="views/main_page.html">
             <img id="imgLogo" src="images/logo.png" alt="Montaña">
             <span id="titleLogo">CARRERAS DE MONTAÑA</span>
-        </div>
-        <div>
+        </a>
+        <div id="buttons">
             <button class="button">Iniciar sesión</button>
             <button id="btnCC" class="button">Crear cuenta</button>
         </div>
     </header>
     <main>
         <section class="text">
-            <article>
+            <article id="slogan">
                 <p>Eleva tus límites,</p>
                 <p> conquista las</p>
                 <p>alturas</p>
             </article>
-            <button id="btnPP" class="button">Ir a la página principal</button>
-            <article>
+            <a href="views/main_page.html"><button id="btnPP" class="button">Ir a la página principal</button></a>
+            <article id="comment">
                 <p>Busca carreras de montaña, encuentra actividades en tu zona y apúntate</p>
                 <p>a través de nuestra página web.</p>
             </article>
