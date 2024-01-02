@@ -20,17 +20,18 @@ a {
 
 /* ---------- Header* ---------- */
 header{
+    padding: 0 1rem;
     width: 100%;
-    height: 8%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #logo{
-    margin: 0 2%;
     display: flex;
-    align-items: flex-end;
+    gap: 0.5rem;
+    align-items:center;
 }
 
 #imgLogo{
@@ -45,24 +46,28 @@ header{
 }
 
 #buttons{
-    margin: 0 2%;
-    width: 30rem;
+    width: auto;
     height: 65%;
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .button{
-    width: 45%;
-    height: 100%;
+    padding: 1rem 2rem;
 
     border: none;
-    border-radius: 20vw;
+    border-radius: 5rem;
+    opacity: 0.9;
 
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    font-weight: bold;
 
     cursor: pointer;
+}
+
+.button:hover{
+    opacity: 1;
 }
 
 #btnCC{
@@ -81,24 +86,25 @@ main{
 }
 
 .text{
-    margin-top: 5%;
-    padding-left: 5%;
+    padding: 1rem 5%;
+    width: 100;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap: 1rem;
 }
 
 #btnPP{
-    margin: 2vw 0;
-    width: 40rem;
-    height: 6rem;
+    padding: 1.5rem 6rem;
     background-color: #FBFF2B;
 }
 
 #slogan{
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #slogan p{
@@ -111,7 +117,7 @@ main{
 }
 
 #comment{
-    width: 60%;
+    width: 100%;
 }
 
 #comment p{
@@ -134,10 +140,12 @@ main{
         font-size: 2rem;
     }
 
-    /* ----- Main ----- */
-    #slogan{
-        width: 95%;
+    .button{
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
     }
+
+    /* ----- Main ----- */
 
     #slogan p{
         font-size: 4.5rem;
@@ -154,28 +162,21 @@ main{
 
 
 @media (min-width: 601px) and (max-width: 900px) {
-
     /* ----- Header ----- */
+
     #titleLogo{
         font-size: 2.5rem;
     }
 
-    /* ----- Main ----- */
-    #slogan{
-        width: 95%;
+    .button{
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
     }
+
+    /* ----- Main ----- */
 
     #slogan p{
         font-size: 5.5rem;
-    }
-
-    #btnPP{
-        width: 30rem;
-        height: 5rem;
-    }
-
-    #comment{
-        width: 95%;
     }
 
     #comment p{
@@ -185,16 +186,9 @@ main{
 
 @media (min-width: 901px) and (max-width: 1200px) {
 
-    #slogan{
-        width: 95%;
-    }
-
     #slogan p{
-        font-size: 8.3rem;
-    }
-
-    #comment{
-        width: 90%;
+        width: 100%;
+        font-size: 8.2rem;
     }
 
     #comment p{
@@ -204,15 +198,7 @@ main{
 
 @media (min-width: 1201px) and (max-width: 1500px) {
 
-    #slogan{
-        width: 90%;
-    }
-
     #slogan p{
         font-size: 10rem;
-    }
-
-    #comment{
-        width: 75%;
     }
 }
