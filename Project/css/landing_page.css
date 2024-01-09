@@ -151,12 +151,8 @@ main{
         font-size: 4.5rem;
     }
 
-    #comment{
-        width: 95%;
-    }
-
     #comment p{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
@@ -165,7 +161,7 @@ main{
     /* ----- Header ----- */
 
     #titleLogo{
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
 
     .button{
